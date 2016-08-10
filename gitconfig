@@ -1,0 +1,12 @@
+[user]
+  name = netznarkose
+  email = mmaintz@posteo.de
+
+[alias]
+  s = status
+  com = commit -m
+	co = checkout
+
+[core]
+	editor = /usr/bin/vim
+	excludesfile = ~/.git/.gitignore
