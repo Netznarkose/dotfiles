@@ -7,7 +7,7 @@
 ########## Variables
 
 dir=~/dotfiles                    # dotfiles directory
-files="vimrc vim zshrc zlogin tmux.conf gitconfig gitignore tmux_settings.sh vimperatorrc rubocop.yml git_loglive.sh"    # list of files/folders to symlink in homedir
+files="vimrc vim zshrc zlogin tmux.conf gitconfig gitignore tmux_settings.sh vimperatorrc rubocop.yml git_loglive.sh pryrc"    # list of files/folders to symlink in homedir
 
 ##########
 

@@ -20,7 +20,7 @@ alias hide='defaults write com.apple.finder AppleShowAllFiles -bool NO; killall 
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool YES; killall Finder'
 alias reload="source ~/.zlogin"
 # Open
-alias leo="cd ~/Coding/ruby/mp3; ruby mp3.rb"
+alias leo="ruby ~/Coding/ruby/repo_of_anarchy/mp3.rb"
 alias wiki="ruby ~/Coding/ruby/wiki_max/lib/wiki_info_box_script.rb"
 alias anki="open /Applications/'Anki 2'.app"
 alias text="open /Applications/TextEdit.app"
