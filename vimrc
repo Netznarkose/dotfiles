@@ -28,7 +28,6 @@ call plug#begin()
   Plug 'christoomey/vim-tmux-navigator'
 call plug#end()  
 
-
 """""  Nerdtree   
 nmap <leader>f :NERDTreeToggle<cr>
 
@@ -83,6 +82,9 @@ vmap <space> <Leader>
 set printoptions=number:y "includes linenumbers :hardcopy 
 
 """""  Copy and Paste  
+"this will reselect and re-yank any text that is pasted in visual mode
+xnoremap p pgvy 
+
 set clipboard=unnamed "copies visual selection to clipboard
 
   """ paste from clipboard without explicitly turning paste mode on/off**
