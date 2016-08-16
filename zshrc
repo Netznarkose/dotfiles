@@ -34,6 +34,7 @@ alias muse="cd ~/Coding/rails/muse"
 alias rail="cd ~/Coding/rails/" 
 alias rub="cd ~/Coding/ruby/" 
 alias glb="cd ~/Coding/rails/GLB" 
+alias blog="cd ~/Coding/rails/blog" 
 # Anything Else
 alias ftp_max="ftp w00fceac@maximilianmaintz.com"
 alias wikipedia='open https://en.wikipedia.org/wiki/Wikipedia'
