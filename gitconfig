@@ -3,7 +3,7 @@
   email = mmaintz@posteo.de
 
 [alias]
-  s = status
+  s = status -s
   com = commit -m
 	co = checkout
 
