@@ -19,3 +19,13 @@ map b :bmarks<SPACE>
 
 " Histroy selection with h
 map h :history <SPACE>
+
+" scroll three lines using the j and k keys
+
+noremap <C-j> 3j
+noremap <C-k> 3k
+
+" use characters instead of numbers used for links 
+:set hintchars=hjklasdfgyuiopqwertnmzxcvb
+" make font of links bigger 
+:highlight Hint font-size:120%;color:white;background-color:red;padding:2px;
