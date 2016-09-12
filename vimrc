@@ -36,6 +36,7 @@ nmap <leader>f :NERDTreeToggle<cr>
   set number "sets linenumbers
   set cursorline "highlights current line
   set cursorcolumn "highlights current column
+  set hlsearch "highlights search
 
   """ Colorscheme
   colorscheme railscasts 
