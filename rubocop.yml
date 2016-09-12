@@ -1,6 +1,6 @@
 # I care much more about clear code than line length
-Metrics/LineLength:
-  Enabled: false
+# Metrics/LineLength:
+#   Enabled: false
 
 # No I don't need to document every class
 Style/Documentation:
