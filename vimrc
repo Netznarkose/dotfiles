@@ -28,6 +28,7 @@ call plug#begin()
   Plug 'christoomey/vim-tmux-navigator'
 call plug#end()  
 
+runtime macros/matchit.vim
 """""  Nerdtree   
 nmap <leader>f :NERDTreeToggle<cr>
 
@@ -73,6 +74,7 @@ set pastetoggle=<F2>
 set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set nocompatible
 set timeoutlen=1000 ttimeoutlen=0
+map <Leader>i mmgg=G`m 
 
 """""  Bindings  
 nmap <space> <Leader>
