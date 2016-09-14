@@ -26,9 +26,17 @@ call plug#begin()
   " Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
   Plug 'kien/ctrlp.vim' "ctrlp opens the fuzzyfinder
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'kana/vim-textobj-user'
+  Plug 'nelstrom/vim-textobj-rubyblock'
+  Plug 'kana/vim-vspec'
 call plug#end()  
 
 runtime macros/matchit.vim
+set nocompatible
+if has("autocmd")
+  filetype indent plugin on
+endif
+
 """""  Nerdtree   
 nmap <leader>f :NERDTreeToggle<cr>
 
