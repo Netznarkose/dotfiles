@@ -70,6 +70,9 @@ nmap <leader>f :NERDTreeToggle<cr>
 set diffopt+=vertical "opens Gdiff in vertical-split
 autocmd QuickFixCmdPost *grep* cwindow "opens quickfix-window after any grep invocation
 
+"""""  Git Commitmessages
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 """""  Whatever 
 set backspace=indent,eol,start "Solves the Backspace Problem
 set nowrap
