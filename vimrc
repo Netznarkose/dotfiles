@@ -1,35 +1,57 @@
 call plug#begin()
 """""  Ruby On Rails    
-   Plug 'vim-ruby/vim-ruby'
-   Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
 
 """""  Nerdtree   
-   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 """""  Layout/ Color 
-  Plug 'flazz/vim-colorschemes' "color schema switcher
-  Plug 'junegunn/seoul256.vim' "color schema
-  Plug 'jpo/vim-railscasts-theme' "color schema
-  Plug 'itchyny/lightline.vim' " StatusLine
+Plug 'flazz/vim-colorschemes' "color schema switcher
+Plug 'junegunn/seoul256.vim' "color schema
+Plug 'jpo/vim-railscasts-theme' "color schema
+Plug 'itchyny/lightline.vim' " StatusLine
 
 """""  Editing        
-   Plug 'tpope/vim-commentary'
-   Plug 'tpope/vim-sleuth' "This plugin adjusts 'shiftwidth' and 'expandtab' 
-   " Plug 'cohama/lexima.vim' "Auto close parentheses
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-sleuth' "This plugin adjusts 'shiftwidth' and 'expandtab' 
+" Plug 'cohama/lexima.vim' "Auto close parentheses
 
 """""  Git Fugitive  
-  Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter' "shows a git diff in the 'gutter'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter' "shows a git diff in the 'gutter'
 
 """""  Navigation   
-  " Use <c-j>, <c-k> or the arrow keys to navigate the result list.
-  " Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
-  Plug 'kien/ctrlp.vim' "ctrlp opens the fuzzyfinder
-  Plug 'christoomey/vim-tmux-navigator'
-  Plug 'kana/vim-textobj-user'
-  Plug 'nelstrom/vim-textobj-rubyblock'
-  Plug 'kana/vim-vspec'
+" Use <c-j>, <c-k> or the arrow keys to navigate the result list.
+" Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+Plug 'kien/ctrlp.vim' "ctrlp opens the fuzzyfinder
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'kana/vim-vspec'
+
+""""""  Testing
+
+Plug 'janko-m/vim-test'
+Plug 'benmills/vimux'
 call plug#end()  
+
+"""""" Testing
+
+  """" vim-test Config
+
+  let test#strategy = "vimux"
+  " nmap <leader>t :TestNearest<CR>
+  nmap <leader>t :TestFile<CR>
+  " nmap <leader>a :TestSuite<CR>
+  " nmap <leader>l :TestLast<CR>
+  " nmap <leader>g :TestVisit<CR>
+
+  """" vimux Config
+
+  let g:VimuxUseNearest = 0
+
+
 
 runtime macros/matchit.vim
 set nocompatible
@@ -41,30 +63,30 @@ endif
 nmap <leader>f :NERDTreeToggle<cr>
 
 """"" Layout/ Color 
-  """ Basics
-  set number "sets linenumbers
-  set cursorline "highlights current line
-  set cursorcolumn "highlights current column
-  set hlsearch "highlights search
+""" Basics
+set number "sets linenumbers
+set cursorline "highlights current line
+set cursorcolumn "highlights current column
+set hlsearch "highlights search
 
-  """ Colorscheme
-  colorscheme railscasts 
+""" Colorscheme
+colorscheme railscasts 
 
-  """ Statusline
-  set laststatus=2 "makes Statusline permanent
-  let g:lightline = {
-        \ 'colorscheme': 'default',
-        \ 'active': {
-        \ 'left': [ [ 'mode', 'paste' ],
-        \           [ 'fugitive', 'filename', 'modified' ] ],
-        \ 'right': [ ]
-        \ },
-        \ 'inactive': {
-        \ 'left': [ [ 'mode', 'paste' ],
-        \           [ 'fugitive', 'filename', 'modified' ] ],
-        \ 'right': [ ]
-        \ },
-        \ }
+""" Statusline
+set laststatus=2 "makes Statusline permanent
+let g:lightline = {
+      \ 'colorscheme': 'default',
+      \ 'active': {
+      \ 'left': [ [ 'mode', 'paste' ],
+      \           [ 'fugitive', 'filename', 'modified' ] ],
+      \ 'right': [ ]
+      \ },
+      \ 'inactive': {
+      \ 'left': [ [ 'mode', 'paste' ],
+      \           [ 'fugitive', 'filename', 'modified' ] ],
+      \ 'right': [ ]
+      \ },
+      \ }
 
 """""  Git Fugitive  
 set diffopt+=vertical "opens Gdiff in vertical-split
@@ -101,15 +123,15 @@ xnoremap p pgvy
 
 set clipboard=unnamed "copies visual selection to clipboard
 
-  """ paste from clipboard without explicitly turning paste mode on/off**
-  let &t_SI .= "\<Esc>[?2004h"
-  let &t_EI .= "\<Esc>[?2004l"
+""" paste from clipboard without explicitly turning paste mode on/off**
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
 
-  inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
-  function! XTermPasteBegin()
-    set pastetoggle=<Esc>[201~
-    set paste
-    return ""
-  endfunction
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
 " ** https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
