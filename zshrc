@@ -28,7 +28,7 @@ alias tmu="sh ~/.tmux_settings.sh"
 alias fulls="sh ~/.tmux/tmux_make_pane_fullscreen.sh"
 # Navigation
 alias db="open -a sqlitebrowser ~/Coding/rails/Blog/db/development.sqlite3"
-alias go="cd ~/Coding/rails/wiki"
+alias go="cd ~/Coding/ruby/RubyLearning/72CoreRuby/"
 alias sample="cd ~/Coding/rails/hartl_maintzi03/sample_app" 
 alias muse="cd ~/Coding/rails/muse" 
 alias rail="cd ~/Coding/rails/" 
@@ -87,7 +87,7 @@ alias now='date "+TIME: %H:%M:%S%nDATE: %d-%m-%y"'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git, git-open)
 
 # User configuration
 
