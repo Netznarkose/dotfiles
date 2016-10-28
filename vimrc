@@ -26,14 +26,12 @@ Plug 'airblade/vim-gitgutter' "shows a git diff in the 'gutter'
 " Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
 Plug 'kien/ctrlp.vim' "ctrlp opens the fuzzyfinder
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'kana/vim-textobj-user'
-Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'kana/vim-vspec'
 
 """"""  Testing
 
 Plug 'janko-m/vim-test'
 Plug 'benmills/vimux'
+Plug 'tpope/vim-dispatch'
 call plug#end()  
 
 """""" Testing
@@ -49,7 +47,7 @@ call plug#end()
 
   """" vimux Config
 
-  let g:VimuxUseNearest = 0
+  " let g:VimuxUseNearest = 0
 
 
 
