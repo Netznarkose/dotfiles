@@ -1,20 +1,24 @@
-# I care much more about clear code than line length
-# Metrics/LineLength:
-#   Enabled: false
+# Specify line length 
+Metrics/LineLength:
+  Enabled: true
+  Max: 120
 
-# No I don't need to document every class
-
+# Disable Class-Dokumentation
 Style/Documentation:
   Enabled: false
 
+# Block Syntax Rules
 Style/BlockDelimiters:
   Enabled: false
   Description: >-
-    Avoid using {...} for multi-line blocks (multiline chaining is
-    always ugly).
+    Avoid using {...} for multi-line blocks
     Prefer {...} over do...end for single-line blocks.
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#single-line-blocks'
 
 # Disable spacing around operators
 Style/SpaceAroundOperators:
   Enabled: false
+  Description: >-
+    spacing around operators is disabled
+    take care for yourself that fractions are written without whitespaces (1/4)
+    and math operations with whitespaces (3 * 3)
