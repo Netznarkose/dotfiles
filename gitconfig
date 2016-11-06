@@ -5,8 +5,8 @@
 [alias]
   s = status -s
   com = commit -m
-	co = checkout
+  co = checkout
 
 [core]
-	editor = /usr/bin/vim
-	excludesfile = ~/.git/.gitignore
+  editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
