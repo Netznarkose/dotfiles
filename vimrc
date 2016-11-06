@@ -1,3 +1,5 @@
+let mapleader=" "
+
 call plug#begin()
 """""  Ruby On Rails    
 Plug 'vim-ruby/vim-ruby'
@@ -108,8 +110,6 @@ set timeoutlen=1000 ttimeoutlen=0
 map <Leader>i mmgg=G`m 
 
 """""  Bindings  
-nmap <space> <Leader>
-vmap <space> <Leader>
 :noremap ff :tab split<CR>
 
 """""  Printing  
