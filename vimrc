@@ -17,7 +17,7 @@ Plug 'itchyny/lightline.vim' " StatusLine
 """""  Editing        
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth' "This plugin adjusts 'shiftwidth' and 'expandtab' 
-" Plug 'cohama/lexima.vim' "Auto close parentheses
+Plug 'cohama/lexima.vim' "Auto close parentheses
 
 """""  Git Fugitive  
 Plug 'tpope/vim-fugitive'
