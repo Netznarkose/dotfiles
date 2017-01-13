@@ -27,7 +27,6 @@ alias text="open /Applications/TextEdit.app"
 alias tmu="sh ~/.tmux_settings.sh"
 alias fulls="sh ~/.tmux/tmux_make_pane_fullscreen.sh"
 # Navigation
-alias db="open -a sqlitebrowser ~/Coding/rails/Blog/db/development.sqlite3"
 alias go="cd ~/Coding/ruby/RubyLearning/72CoreRuby/"
 alias sample="cd ~/Coding/rails/hartl_maintzi03/sample_app" 
 alias muse="cd ~/Coding/rails/muse" 
@@ -36,9 +35,9 @@ alias rub="cd ~/Coding/ruby/"
 alias glb="cd ~/Coding/rails/GLB" 
 alias blog="cd ~/Coding/rails/blog" 
 alias dot="cd ~/dotfiles" 
+alias charts="cd ~/Coding/rails/web_charts" 
 # Anything Else
 alias ftp_max="ftp w00fceac@maximilianmaintz.com"
-alias wikipedia='open https://en.wikipedia.org/wiki/Wikipedia'
 alias gen="~/Coding/bash/test_file_generator/generator.sh"
 alias gitl="sh ~/.git_loglive.sh $1"
 alias gitll="git --no-pager log --graph --pretty=oneline --abbrev-commit --decorate --all"
