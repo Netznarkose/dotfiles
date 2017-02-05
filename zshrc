@@ -59,6 +59,7 @@ alias glb="cd ~/Coding/rails/GLB"
 alias blog="cd ~/Coding/rails/blog" 
 alias dot="cd ~/dotfiles" 
 alias charts="cd ~/Coding/rails/web_charts" 
+alias surf="cd ~/Coding/rails/teachsurfing/ts_backend" 
 # Anything Else
 alias ftp_max="ftp w00fceac@maximilianmaintz.com"
 alias gen="~/Coding/bash/test_file_generator/generator.sh"
