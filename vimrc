@@ -65,8 +65,12 @@ endif
 nmap <leader>f :NERDTreeToggle<cr>
 
 """"" Layout/ Color 
-""" Basics
-set number "sets linenumbers
+""" Linenumber
+" http://stackoverflow.com/a/19033976/4958271
+" Vim shows the absolute line number instead of 0, when both relativenumber and number are set
+set relativenumber 
+set number 
+
 set cursorline "highlights current line
 set cursorcolumn "highlights current column
 set hlsearch "highlights search
