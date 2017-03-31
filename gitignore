@@ -1,6 +1,5 @@
 .DS_Store
 wiki/
-vim/plugged
-vim/autoload
+vim/
 
 
