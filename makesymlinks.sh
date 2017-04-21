@@ -2,6 +2,7 @@
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# Make sure to delete original dot-files before running the script
 ############################
 
 ########## Variables
