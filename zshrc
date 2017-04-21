@@ -28,7 +28,7 @@ export KEYTIMEOUT=1
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pure"
+ZSH_THEME="refined"
 # To Display the right colors/themes in tmux
 # export TERM=xterm-256color
 # [ -n "$TMUX" ] && export TERM=screen-256color
