@@ -21,6 +21,10 @@ Plug 'cohama/lexima.vim' "Auto close parentheses
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+
+
 """""  Git Fugitive  
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter' "shows a git diff in the 'gutter'
@@ -148,3 +152,8 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+runtime macros/matchit.vim
+set nocompatible
+if has("autocmd")
+  filetype indent plugin on
+endif
