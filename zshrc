@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/netznarkose/.oh-my-zsh
+export ZSH=/Users/max/.oh-my-zsh
 bindkey -v
 
 bindkey '^P' up-history
@@ -148,5 +148,4 @@ source $ZSH/oh-my-zsh.sh
 # check ~/.oh_my_zsh/iTerm2colors.sh
 # source $ZSH/iTerm2colors.sh
 
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
