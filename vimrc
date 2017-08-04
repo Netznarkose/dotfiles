@@ -17,7 +17,7 @@ Plug 'itchyny/lightline.vim' " StatusLine
 """""  Editing        
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth' "This plugin adjusts 'shiftwidth' and 'expandtab' 
-Plug 'cohama/lexima.vim' "Auto close parentheses
+" Plug 'cohama/lexima.vim' "Auto close parentheses
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 
@@ -118,9 +118,6 @@ set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set nocompatible
 set timeoutlen=1000 ttimeoutlen=0
 map <Leader>i mmgg=G`m 
-
-"""""  Bindings  
-:noremap ff :tab split<CR>
 
 """""  Printing  
 set printoptions=number:y "includes linenumbers :hardcopy 
