@@ -41,9 +41,9 @@ ZSH_THEME="refined"
 # Commands
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool NO; killall Finder'
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool YES; killall Finder'
-alias reload="source ~/.zlogin"
+alias reload="source ~/.zshrc"
 # Open
-alias leo="ruby ~/Coding/ruby/repo_of_anarchy/mp3.rb"
+alias leo="ruby ~/Documents/TerminalLeoMp3Parser/lib/terminal_leo_mp3_parser.rb"
 alias wiki="ruby ~/Coding/ruby/wiki_max/lib/wiki_info_box_script.rb"
 alias anki="open /Applications/'Anki 2'.app"
 alias text="open /Applications/TextEdit.app"
@@ -148,4 +148,5 @@ source $ZSH/oh-my-zsh.sh
 # check ~/.oh_my_zsh/iTerm2colors.sh
 # source $ZSH/iTerm2colors.sh
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+# Load RVM into a shell session *as a function*
