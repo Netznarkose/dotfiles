@@ -37,25 +37,18 @@ Plug 'christoomey/vim-tmux-navigator'
 
 """"""  Testing
 
-Plug 'janko-m/vim-test'
-Plug 'benmills/vimux'
-Plug 'tpope/vim-dispatch'
+Plug 'thoughtbot/vim-rspec'
+Plug 'christoomey/vim-tmux-runner'
 call plug#end()  
 
 """""" Testing
 
-  """" vim-test Config
+let g:rspec_command = "VtrSendCommandToRunner! rspec {spec}"
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
-  let test#strategy = "vimux"
-  " nmap <leader>t :TestNearest<CR>
-  nmap <leader>t :TestFile<CR>
-  " nmap <leader>a :TestSuite<CR>
-  " nmap <leader>l :TestLast<CR>
-  " nmap <leader>g :TestVisit<CR>
-
-  """" vimux Config
-
-  " let g:VimuxUseNearest = 0
 
 
 
