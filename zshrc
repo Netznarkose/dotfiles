@@ -42,6 +42,7 @@ ZSH_THEME="refined"
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool NO; killall Finder'
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool YES; killall Finder'
 alias reload="source ~/.zshrc"
+alias histgrep="history | grep"
 # Open
 alias leo="ruby ~/Documents/TerminalLeoMp3Parser/lib/terminal_leo_mp3_parser.rb"
 alias wiki="ruby ~/Coding/ruby/wiki_max/lib/wiki_info_box_script.rb"
