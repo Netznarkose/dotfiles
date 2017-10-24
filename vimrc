@@ -46,10 +46,10 @@ call plug#end()
 let g:rspec_command = "VtrSendCommandToRunner! rspec {spec}"
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
+" map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-
+map <Leader>l :nohlsearch<CR>
 
 
 runtime macros/matchit.vim
