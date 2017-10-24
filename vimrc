@@ -71,6 +71,7 @@ set number
 set cursorline "highlights current line
 set cursorcolumn "highlights current column
 set hlsearch "highlights search
+set incsearch "highlights search
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
