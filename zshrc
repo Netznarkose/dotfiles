@@ -116,6 +116,7 @@ plugins=(git, git-open)
 
 # export PATH="$PATH:/Users/netznarkose/.rvm/gems/ruby-2.0.0-p598/bin:/Users/netznarkose/.rvm/gems/ruby-2.0.0-p598@global/bin:/Users/netznarkose/.rvm/rubies/ruby-2.0.0-p598/bin:/usr/local/bin:/Users/netznarkose/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/MacGPG2/bin"
 export PATH=/usr/local/bin:$PATH
+export EDITOR=vim
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
