@@ -34,6 +34,8 @@ Plug 'airblade/vim-gitgutter' "shows a git diff in the 'gutter'
 " Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
 Plug 'kien/ctrlp.vim' "ctrlp opens the fuzzyfinder
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'jeetsukumaran/vim-buffergator'
+
 
 """"""  Testing
 
@@ -51,6 +53,12 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 map <Leader>l :nohlsearch<CR>
 
+
+" Toggle the Buffergator window
+noremap <leader>k :BuffergatorToggle<CR>
+let g:buffergator_viewport_split_policy = "B"
+" don't set up your crazy default keymappings
+let g:buffergator_suppress_keymaps = 1
 
 runtime macros/matchit.vim
 set nocompatible
