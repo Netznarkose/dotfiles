@@ -113,7 +113,6 @@ plugins=(git, git-open)
 
 # User configuration
 
-# export PATH="$PATH:/Users/netznarkose/.rvm/gems/ruby-2.0.0-p598/bin:/Users/netznarkose/.rvm/gems/ruby-2.0.0-p598@global/bin:/Users/netznarkose/.rvm/rubies/ruby-2.0.0-p598/bin:/usr/local/bin:/Users/netznarkose/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/MacGPG2/bin"
 export PATH=/usr/local/bin:$PATH
 export EDITOR=vim
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -148,6 +147,6 @@ source $ZSH/oh-my-zsh.sh
 # Color Problem in Iterm2 https://github.com/altercation/solarized/issues/257
 # check ~/.oh_my_zsh/iTerm2colors.sh
 # source $ZSH/iTerm2colors.sh
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+ 
 # Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
