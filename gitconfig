@@ -1,12 +1,19 @@
 [user]
-  name = netznarkose
-  email = mmaintz@posteo.de
-
-[alias]
-  s = status -s
-  com = commit -m
-  co = checkout
-
+	name = max 
+	email = mmaintz@posteo.de
 [core]
-  editor = /usr/bin/vim
-  excludesfile = ~/.gitignore
+	editor = vim
+	excludesfile = /Users/max/.gitignore_global
+[alias]
+	s = status -s
+	co = checkout
+	comv = commit -v
+	stash = stash -u
+	shame = log --pretty=format:'%C(yellow)%h%C(reset) - %an [%C(green)%ar%C(reset)] %s'
+	ref = reflog --format='%C(auto)%h %<|(20)%gd %C(blue)%cr%C(reset) %gs (%s)'
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
