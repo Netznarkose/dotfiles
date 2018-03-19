@@ -38,6 +38,9 @@ ZSH_THEME="refined"
 
 #--------------------Aliase---------------------------#
 
+# Alias
+# vi evokes the build in vim-editor which does not ships with +clipboard 
+alias vi=vim
 # Commands
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool NO; killall Finder'
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool YES; killall Finder'
