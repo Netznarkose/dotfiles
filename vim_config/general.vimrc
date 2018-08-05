@@ -15,10 +15,13 @@ set ignorecase
 set mouse=a "http://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
 set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set nocompatible
-set timeoutlen=10 ttimeoutlen=0
+set timeoutlen=0 ttimeoutlen=0
 
 """ Colorscheme
 colorscheme railscasts 
+
+command Nf NERDTreeFind
+command Nt NERDTreeToggle
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
