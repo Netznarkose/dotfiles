@@ -1,10 +1,7 @@
-let mapleader=" "
-map <Leader>l :nohlsearch<CR>
-
 " Indent whole buffer
-map <C-i> mmgg=G`m 
+map <C-y> mmgg=G`m 
 
-" toggle split to full-screen with leader-d
+" toggle split to full-screen with ctrl-u
 map <C-u> :call MaximizeToggle()<CR>
 
-map <C-m> <Plug>Commentary
+map <C-d> <plug>Commentary

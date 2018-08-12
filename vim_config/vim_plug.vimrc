@@ -15,8 +15,6 @@ Plug 'tpope/vim-sleuth' "This plugin adjusts 'shiftwidth' and 'expandtab'
 " Plug 'cohama/lexima.vim' "Auto close parentheses
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'kana/vim-textobj-user'
-Plug 'nelstrom/vim-textobj-rubyblock'
 
 
 """""  Git Fugitive  
