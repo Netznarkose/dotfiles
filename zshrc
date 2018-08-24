@@ -1,4 +1,7 @@
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 # Path to your oh-my-zsh installation.
+
 export ZSH=/Users/max/.oh-my-zsh
 bindkey -v
 
@@ -52,6 +55,7 @@ alias wiki="ruby ~/Coding/ruby/wiki_max/lib/wiki_info_box_script.rb"
 alias anki="open /Applications/'Anki 2'.app"
 alias text="open /Applications/TextEdit.app"
 alias glb="cd ~/Documents/GLB"
+alias brand="Documents/code/brandslisten"
 # Navigation
 alias go="cd ~/Coding/ruby/RubyLearning/72CoreRuby/"
 alias sample="cd ~/Coding/rails/hartl_maintzi03/sample_app" 
