@@ -1,6 +1,6 @@
 .DS_Store
 wiki/
-vim/
+/vim/plugged/*
 tags/
 
 

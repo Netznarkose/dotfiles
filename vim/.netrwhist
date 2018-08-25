@@ -1,2 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/max/Documents/code/brandslisten/bl/core/test/unit/topic'
+let g:netrw_dirhist_2='/Users/max/Documents/code/minitest_dummy'
+let g:netrw_dirhist_3='/Users/max/Documents/code/minitest_dummy/app'
+let g:netrw_dirhist_4='/Users/max/Documents/code/minitest_dummy/app/controllers'
