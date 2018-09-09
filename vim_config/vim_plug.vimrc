@@ -24,7 +24,7 @@ Plug 'airblade/vim-gitgutter' "shows a git diff in the 'gutter'
 """""  Navigation   
 Plug 'kien/ctrlp.vim' "FuzzyFinder
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 
 
 """"""  Testing
