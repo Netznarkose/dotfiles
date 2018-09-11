@@ -4,17 +4,9 @@
  then
      number_of_logs=20 # set number of logs to 40 unless they are specified 
  fi
-while :
-do
-    clear
-    git --no-pager log -n $number_of_logs --graph --pretty=oneline --abbrev-commit --decorate --all 
-    sleep 1
+ while :; do
+   output=$(git --no-pager log -n $number_of_logs --graph --pretty=oneline --abbrev-commit --decorate --all --color=always)
+   clear
+   echo "$output" 
+   sleep 1
 done
-
- # while :
- # do
- #     clear
- #     git --no-pager log `git rev-parse HEAD` -n $number_of_logs --graph --pretty=oneline --abbrev-commit --decorate --all
- #     sleep 1
- # done
-
