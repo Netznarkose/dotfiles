@@ -23,6 +23,9 @@ colorscheme railscasts
 command Nf NERDTreeFind
 command Nt NERDTreeToggle
 
+" always open quickfix in full-width
+au FileType qf wincmd J
+
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
