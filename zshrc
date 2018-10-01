@@ -122,6 +122,7 @@ plugins=(git, git-open)
 # User configuration
 
 export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:~/bin
 export EDITOR=vim
 # export MANPATH="/usr/local/man:$MANPATH"
 
