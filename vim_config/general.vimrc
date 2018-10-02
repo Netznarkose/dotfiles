@@ -17,11 +17,8 @@ set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set nocompatible
 set timeoutlen=0 ttimeoutlen=0
 
-""" Colorscheme
+" Appearance 
 colorscheme railscasts 
-
-command Nf NERDTreeFind
-command Nt NERDTreeToggle
 
 " always open quickfix in full-width
 au FileType qf wincmd J
@@ -30,13 +27,24 @@ au FileType qf wincmd J
 autocmd VimResized * :wincmd =
 
 
-"""""  Git Commitmessages
+" Git
 autocmd Filetype gitcommit setlocal spell textwidth=72
-" Unix grep
-autocmd QuickFixCmdPost *grep* cwindow "opens quickfix-window after any grep invocation
+" Opens Quickfix after any grep invocation
+autocmd QuickFixCmdPost *grep* cwindow 
 
+" Key-Bindings
+" Indent whole buffer
+map <C-y> mmgg=G`m 
+" toggle split to full-screen with ctrl-u
+map <C-u> :call MaximizeToggle()<CR>
+" Toggle-Comments
+map <C-d> <plug>Commentary
 
-"""""  Copy and Paste  
+" Ex-comands
+command Nf NERDTreeFind
+command Nt NERDTreeToggle
+
+" Copy and Paste  
 "this will reselect and re-yank any text that is pasted in visual mode
 xnoremap p pgvy 
 
