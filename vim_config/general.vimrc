@@ -35,8 +35,8 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Key-Bindings
 " Indent whole buffer
 map <C-y> mmgg=G`m 
-" toggle split to full-screen with ctrl-u
-map <C-u> :call MaximizeToggle()<CR>
+" make split to full-screen with ctrl-u
+noremap <C-u> :tab split<CR>
 " Toggle-Comments
 map <C-d> <plug>Commentary
 
@@ -81,19 +81,3 @@ augroup myvimrc
     au!
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
-
-function! MaximizeToggle()
-  if exists("s:maximize_session")
-    exec "source " . s:maximize_session
-    call delete(s:maximize_session)
-    unlet s:maximize_session
-    let &hidden=s:maximize_hidden_save
-    unlet s:maximize_hidden_save
-  else
-    let s:maximize_hidden_save = &hidden
-    let s:maximize_session = tempname()
-    set hidden
-    exec "mksession! " . s:maximize_session
-    only
-  endif
-endfunction
