@@ -160,3 +160,4 @@ source $ZSH/oh-my-zsh.sh
  
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+export PATH="/usr/local/sbin:$PATH"
