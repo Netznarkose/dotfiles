@@ -45,6 +45,7 @@ ZSH_THEME="refined"
 # vi evokes the build in vim-editor which does not ships with +clipboard 
 alias vi=vim
 # Commands
+alias git='hub'
 alias be='bundle exec'
 alias bi='bundle install'
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool NO; killall Finder'
