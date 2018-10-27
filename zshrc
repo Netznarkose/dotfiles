@@ -45,6 +45,7 @@ ZSH_THEME="refined"
 # vi evokes the build in vim-editor which does not ships with +clipboard 
 alias vi=vim
 # Commands
+alias tig="sh ~/dotfiles/tig.sh $1"
 alias git='hub'
 alias be='bundle exec'
 alias bi='bundle install'
