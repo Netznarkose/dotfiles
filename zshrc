@@ -122,7 +122,6 @@ alias now='date "+TIME: %H:%M:%S%nDATE: %d-%m-%y"'
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
  git
- git-open
  zsh-syntax-highlighting
  zsh-autosuggestions
  )
