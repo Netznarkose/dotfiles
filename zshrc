@@ -126,6 +126,9 @@ plugins=(
  zsh-syntax-highlighting
  zsh-autosuggestions
  )
+ # zsh-autosuggestions Iterm triggers an escaped sequence
+bindkey '^[[[CE' autosuggest-accept # ctrl enter
+bindkey '^[[[CB' forward-word       # shift enter
 
 # User configuration
 
@@ -135,6 +138,7 @@ export EDITOR=vim
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
