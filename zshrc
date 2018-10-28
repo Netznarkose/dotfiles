@@ -57,7 +57,7 @@ alias histgrep="history | grep"
 alias gitl="sh ~/.git_loglive.sh $1"
 alias dot="cd ~/dotfiles" 
 alias dots="cd ~/dotfiles" 
-alias leo="ruby ~/Documents/TerminalLeoMp3Parser/lib/terminal_leo_mp3_parser.rb"
+alias leo="cd ~/Documents/code/TerminalLeoMp3Parser ; ruby lib/terminal_leo_mp3_parser.rb"
 # brandslisten
 alias brand="cd ~/Documents/code/brandslisten"
 alias bl="cd ~/Documents/code/brandslisten/bl"
