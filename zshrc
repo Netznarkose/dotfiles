@@ -46,6 +46,7 @@ ZSH_THEME="refined"
 alias vi=vim
 # Commands
 alias tig="sh ~/dotfiles/tig.sh $1"
+alias ranger="tmux split-window -h ranger ; tmux resize-pane -Z"
 alias git='hub'
 alias be='bundle exec'
 alias bi='bundle install'
