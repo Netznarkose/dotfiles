@@ -54,30 +54,23 @@ alias hide='defaults write com.apple.finder AppleShowAllFiles -bool NO; killall 
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool YES; killall Finder'
 alias reload="source ~/.zshrc"
 alias histgrep="history | grep"
-# Open
-alias leo="ruby ~/Documents/TerminalLeoMp3Parser/lib/terminal_leo_mp3_parser.rb"
-alias wiki="ruby ~/Coding/ruby/wiki_max/lib/wiki_info_box_script.rb"
-alias anki="open /Applications/'Anki 2'.app"
-alias text="open /Applications/TextEdit.app"
-alias glb="cd ~/Documents/GLB"
-alias brand="Documents/code/brandslisten"
-# Navigation
-alias go="cd ~/Coding/ruby/RubyLearning/72CoreRuby/"
-alias sample="cd ~/Coding/rails/hartl_maintzi03/sample_app" 
-alias muse="cd ~/Coding/rails/muse" 
-alias rail="cd ~/Coding/rails/" 
-alias rub="cd ~/Coding/ruby/" 
-alias blog="cd ~/Coding/rails/blog" 
-alias dot="cd ~/dotfiles" 
-alias charts="cd ~/Coding/rails/web_charts" 
-alias surf="cd ~/Coding/rails/teachsurfing/ts_backend" 
-# Anything Else
-alias ftp_max="ftp w00fceac@maximilianmaintz.com"
-alias gen="~/Coding/bash/test_file_generator/generator.sh"
 alias gitl="sh ~/.git_loglive.sh $1"
-alias gitll="git --no-pager log --graph --pretty=oneline --abbrev-commit --decorate --all"
-alias railss="rvm use ruby-2.0.0-p598; rails server"
-alias now='date "+TIME: %H:%M:%S%nDATE: %d-%m-%y"'
+alias dot="cd ~/dotfiles" 
+alias dots="cd ~/dotfiles" 
+alias leo="ruby ~/Documents/TerminalLeoMp3Parser/lib/terminal_leo_mp3_parser.rb"
+# brandslisten
+alias brand="cd ~/Documents/code/brandslisten"
+alias bl="cd ~/Documents/code/brandslisten/bl"
+alias core="cd ~/Documents/code/brandslisten/bl-core-logic"
+alias modular="cd ~/Documents/code/brandslisten/bl-modular-api"
+alias bbo="cd ~/Documents/code/brandslisten/bl_bbo"
+alias eon="cd ~/Documents/code/brandslisten/bl_eon"
+alias az="cd ~/Documents/code/brandslisten/bl_az"
+alias aok="cd ~/Documents/code/brandslisten/bl_aok"
+alias ac="cd ~/Documents/code/brandslisten/bl_ac"
+alias bywk="cd ~/Documents/code/brandslisten/bl_bywk"
+alias um="cd ~/Documents/code/brandslisten/bl_unity_media"
+alias wl="cd ~/Documents/code/brandslisten/white_label"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
