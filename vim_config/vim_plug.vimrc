@@ -25,6 +25,8 @@ Plug 'airblade/vim-gitgutter' "shows a git diff in the 'gutter'
 Plug 'kien/ctrlp.vim' "FuzzyFinder
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
+Plug 'rking/ag.vim'
+
 
 
 """"""  Testing
