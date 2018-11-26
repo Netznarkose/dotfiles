@@ -4,7 +4,6 @@ source $(brew --prefix nvm)/nvm.sh
 
 export ZSH=/Users/max/.oh-my-zsh
 bindkey -v
-
 bindkey '^P' up-history
 bindkey '^N' down-history
 bindkey '^?' backward-delete-char
@@ -86,6 +85,7 @@ alias ac="cd ~/Documents/code/brandslisten/bl_ac"
 alias bywk="cd ~/Documents/code/brandslisten/bl_bywk"
 alias um="cd ~/Documents/code/brandslisten/bl_unity_media"
 alias wl="cd ~/Documents/code/brandslisten/white_label"
+alias swagger="cd ~/Documents/code/brandslisten/api-swagger"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -178,6 +178,7 @@ bindkey '^[[[CB' forward-word       # shift enter
 # check ~/.oh_my_zsh/iTerm2colors.sh
 # source $ZSH/iTerm2colors.sh
  
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-export PATH="/usr/local/sbin:$PATH"
+# export PATH="/usr/local/sbin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
