@@ -179,6 +179,7 @@ bindkey '^[[[CB' forward-word       # shift enter
 # source $ZSH/iTerm2colors.sh
  
 # export PATH="/usr/local/sbin:$PATH"
+source ~/bl-openstack/openstackconf
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
