@@ -86,6 +86,7 @@ alias bywk="cd ~/Documents/code/brandslisten/bl_bywk"
 alias um="cd ~/Documents/code/brandslisten/bl_unity_media"
 alias wl="cd ~/Documents/code/brandslisten/white_label"
 alias swagger="cd ~/Documents/code/brandslisten/api-swagger"
+alias azch="cd ~/Documents/code/brandslisten/bl_azch"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
