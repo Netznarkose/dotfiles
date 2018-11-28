@@ -89,6 +89,7 @@ alias swagger="cd ~/Documents/code/brandslisten/api-swagger"
 alias azch="cd ~/Documents/code/brandslisten/bl_azch"
 alias shn="cd ~/Documents/code/brandslisten/bl_shn"
 alias ed="cd ~/Documents/code/brandslisten/bl_ed"
+alias hw="cd ~/Documents/code/brandslisten/bl_hw"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
