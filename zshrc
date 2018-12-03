@@ -92,6 +92,7 @@ alias ed="cd ~/Documents/code/brandslisten/bl_ed"
 alias hw="cd ~/Documents/code/brandslisten/bl_hw"
 alias lol="cd ~/Documents/code/brandslisten/bl_lol"
 alias ds="cd ~/Documents/code/brandslisten/bl_ds"
+alias style="cd ~/Documents/code/brandslisten/bl_styleguide"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
