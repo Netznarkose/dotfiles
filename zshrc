@@ -67,7 +67,8 @@ ZSH_THEME="refined"
 
 # Alias
 # vi evokes the build in vim-editor which does not ships with +clipboard 
-alias vi=vim
+alias vi=nvim
+alias vim=nvim
 # Commands
 alias tig="sh ~/dotfiles/tig.sh $1"
 alias ranger="tmux split-window -h ranger ; tmux resize-pane -Z"
