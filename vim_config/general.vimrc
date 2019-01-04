@@ -43,6 +43,7 @@ map <C-d> <plug>Commentary
 " Ex-comands
 command Nf NERDTreeFind
 command Nt NERDTreeToggle
+let g:NERDTreeWinSize=60
 
 " Copy and Paste  
 "this will reselect and re-yank any text that is pasted in visual mode
