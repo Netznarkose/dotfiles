@@ -24,7 +24,7 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt HIST_VERIFY
 
-function gcb() {
+function funk() {
   git checkout -b "$(date +%Y%m%d)_$1"
 }
 
@@ -70,7 +70,7 @@ ZSH_THEME="refined"
 alias vi=nvim
 alias vim=nvim
 # Commands
-alias tig="sh ~/dotfiles/tig.sh $1"
+# alias tig="sh ~/dotfiles/tig.sh $1"
 alias ranger="tmux split-window -h ranger ; tmux resize-pane -Z"
 alias git='hub'
 alias be='bundle exec'
@@ -80,6 +80,7 @@ alias show='defaults write com.apple.finder AppleShowAllFiles -bool YES; killall
 alias reload="source ~/.zshrc"
 alias histgrep="history | grep"
 alias gitl="sh ~/.git_loglive.sh $1"
+alias set_envs="source ~/dotfiles/set_envs.sh $1"
 alias dot="cd ~/dotfiles" 
 alias dots="cd ~/dotfiles" 
 alias leo="cd ~/Documents/code/TerminalLeoMp3Parser ; ruby lib/terminal_leo_mp3_parser.rb"
