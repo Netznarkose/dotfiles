@@ -8,3 +8,6 @@ set main-view-id = yes
 # set status-view	= line-number:no,interval=5 status:short file-name
 # set tree-view	= line-number:no,interval=5 mode author:full file-size date:default id:no file-name
 bind generic 9 !@sh -c "git rev-parse --short %(commit) | pbcopy"
+
+# Navigation
+bind generic    G	move-page-down
