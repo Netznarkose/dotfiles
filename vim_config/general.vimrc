@@ -15,7 +15,10 @@ set ignorecase
 set mouse=a "http://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
 set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set nocompatible
-set timeoutlen=0 ttimeoutlen=0
+" set timeoutlen=0 ttimeoutlen=0
+set timeoutlen=1000 
+set ttimeoutlen=10
+
 
 " Appearance 
 colorscheme railscasts 
@@ -37,12 +40,14 @@ autocmd QuickFixCmdPost *grep* cwindow
 map <C-y> mmgg=G`m 
 " make split to full-screen with ctrl-u
 noremap <C-u> :tab split<CR>
+nnoremap tn :tabnew<Space>
+nnoremap tl :tabnext<CR>
+nnoremap th :tabprevious<CR>
+nnoremap nt :NERDTreeToggle<CR>
+nnoremap nf :NERDTreeFind<CR>
 " Toggle-Comments
 map <C-d> <plug>Commentary
 
-" Ex-comands
-command Nf NERDTreeFind
-command Nt NERDTreeToggle
 let g:NERDTreeWinSize=60
 
 " Copy and Paste  
