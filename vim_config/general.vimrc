@@ -16,7 +16,7 @@ set mouse=a "http://unix.stackexchange.com/questions/139578/copy-paste-for-vim-i
 set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set nocompatible
 " set timeoutlen=0 ttimeoutlen=0
-set timeoutlen=1000 
+set timeoutlen=100 
 set ttimeoutlen=10
 
 
