@@ -107,6 +107,8 @@ alias style="cd ~/Documents/code/brandslisten/bl_styleguide"
 alias qv="cd ~/Documents/code/brandslisten/bl_qv"
 alias bw="cd ~/Documents/code/brandslisten/bl_bw"
 alias styleguide_bug='sed -i "" "/app-bundle/d" "$(bundle show bl_styleguide)/app/assets/stylesheets/bl_styleguide/main.scss"'
+alias unseal_sg="sh ~/Documents/code/brandslisten/bl_my_scripts/unseal_staging_vault.sh"
+alias unseal_pn="sh ~/Documents/code/brandslisten/bl_my_scripts/unseal_production_vault.sh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
