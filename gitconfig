@@ -7,6 +7,7 @@
 [alias]
 	s = status -s
 	co = checkout
+        chp = cherry-pick
 	comv = commit -v
 	stash = stash -u
 	tblame = log --pretty=format:'%C(yellow)%h%C(reset) - %an [%C(green)%ar%C(reset)] %s'
