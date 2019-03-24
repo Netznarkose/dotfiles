@@ -39,7 +39,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Indent whole buffer
 map <C-y> mmgg=G`m 
 " make split to full-screen with ctrl-u
-nnoremap <silent> <C-U> :ZoomToggle<CR>
+nnoremap <silent> <C-f> :ZoomToggle<CR>
 nnoremap tn :tabnew<Space>
 nnoremap tl :tabnext<CR>
 nnoremap th :tabprevious<CR>
