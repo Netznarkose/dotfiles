@@ -39,7 +39,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Indent whole buffer
 map <C-y> mmgg=G`m 
 " make split to full-screen with ctrl-u
-noremap <C-u> :tab split<CR>
+nnoremap <silent> <C-U> :ZoomToggle<CR>
 nnoremap tn :tabnew<Space>
 nnoremap tl :tabnext<CR>
 nnoremap th :tabprevious<CR>
@@ -87,3 +87,17 @@ augroup myvimrc
     au!
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
+" Zoom / Restore window.
+"
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
