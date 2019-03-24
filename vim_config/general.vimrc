@@ -36,17 +36,15 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd QuickFixCmdPost *grep* cwindow 
 
 " Key-Bindings
-" Indent whole buffer
-map <C-y> mmgg=G`m 
-" make split to full-screen with ctrl-u
+" make split to full-screen with ctrl-f
 nnoremap <silent> <C-f> :ZoomToggle<CR>
-nnoremap tn :tabnew<Space>
-nnoremap tl :tabnext<CR>
-nnoremap th :tabprevious<CR>
-nmap 9 :NERDTreeToggle<CR>
-nmap 0 :NERDTreeFind<CR>
+nmap <C-y> :NERDTreeToggle<CR>
+nmap <C-u> :NERDTreeFind<CR>
 " Toggle-Comments
 vmap m <plug>Commentary
+
+" Ex-comands
+command Ls BuffergatorToggle
 
 let g:NERDTreeWinSize=60
 
