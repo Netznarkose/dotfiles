@@ -26,6 +26,7 @@ Plug 'kien/ctrlp.vim' "FuzzyFinder
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'rking/ag.vim'
+Plug 'jeetsukumaran/vim-buffergator'
 
 
 
