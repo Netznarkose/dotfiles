@@ -16,8 +16,8 @@ set mouse=a "http://unix.stackexchange.com/questions/139578/copy-paste-for-vim-i
 set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
 set nocompatible
 " set timeoutlen=0 ttimeoutlen=0
-set timeoutlen=100 
-set ttimeoutlen=10
+set timeoutlen=0 
+set ttimeoutlen=0
 
 
 " Appearance 
@@ -43,10 +43,10 @@ noremap <C-u> :tab split<CR>
 nnoremap tn :tabnew<Space>
 nnoremap tl :tabnext<CR>
 nnoremap th :tabprevious<CR>
-nnoremap nt :NERDTreeToggle<CR>
-nnoremap nf :NERDTreeFind<CR>
+nmap 9 :NERDTreeToggle<CR>
+nmap 0 :NERDTreeFind<CR>
 " Toggle-Comments
-map <C-d> <plug>Commentary
+vmap m <plug>Commentary
 
 let g:NERDTreeWinSize=60
 
