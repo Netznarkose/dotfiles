@@ -27,11 +27,4 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'rking/ag.vim'
 Plug 'jeetsukumaran/vim-buffergator'
-
-
-
-""""""  Testing
-
-Plug 'thoughtbot/vim-rspec'
-Plug 'christoomey/vim-tmux-runner'
 call plug#end()  
