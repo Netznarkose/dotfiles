@@ -1,4 +1,5 @@
 export NVM_DIR=~/.nvm
+export TERM=xterm-256color
 source $(brew --prefix nvm)/nvm.sh
 # Path to your oh-my-zsh installation.
 
