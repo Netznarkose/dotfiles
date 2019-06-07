@@ -205,7 +205,21 @@ bindkey '^[[[CB' forward-word       # shift enter
 # source $ZSH/iTerm2colors.sh
  
 # export PATH="/usr/local/sbin:$PATH"
-source ~/bl-openstack/openstackconf
+source ~/bl-openstack-env/openstackenv
+
+# SSH completion
+# taken from here https://serverfault.com/questions/170346/how-to-edit-command-completion-for-ssh-on-zsh
+h=()
+if [[ -r ~/.ssh/config ]]; then
+  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
+fi
+if [[ -r ~/.ssh/os-config ]]; then
+  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/os-config)"}:#Host *}#Host }:#*[*?]*})
+fi
+if [[ $#h -gt 0 ]]; then
+  zstyle ':completion:*:ssh:*' hosts $h
+  zstyle ':completion:*:slogin:*' hosts $h
+fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
