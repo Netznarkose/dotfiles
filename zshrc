@@ -26,7 +26,7 @@ setopt HIST_REDUCE_BLANKS
 setopt HIST_VERIFY
 
 function funk() {
-  git checkout -b "$(date +%Y%m%d)_$1"
+  git checkout -b "$(date +%Y%m%d)_mm_$1"
 }
 
 function go() {
@@ -107,6 +107,7 @@ alias ds="cd ~/Documents/code/brandslisten/bl_ds"
 alias style="cd ~/Documents/code/brandslisten/bl_styleguide"
 alias qv="cd ~/Documents/code/brandslisten/bl_qv"
 alias bw="cd ~/Documents/code/brandslisten/bl_bw"
+alias elb="cd ~/Documents/code/brandslisten/bl_elb"
 alias private="cd ~/Documents/code/brandslisten/private"
 alias code="cd ~/Documents/code"
 alias styleguide_bug='sed -i "" "/app-bundle/d" "$(bundle show bl_styleguide)/app/assets/stylesheets/bl_styleguide/main.scss"'
@@ -225,3 +226,4 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/sbin:$PATH"
