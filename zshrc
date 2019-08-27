@@ -1,3 +1,5 @@
+source /Users/max/dotfiles/secret_brandslisten_envs
+# zmodload zsh/zprof
 export NVM_DIR=~/.nvm
 export TERM=xterm-256color
 source $(brew --prefix nvm)/nvm.sh
@@ -226,3 +228,5 @@ if [[ $#h -gt 0 ]]; then
 fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+
+# zprof
