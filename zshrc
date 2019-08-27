@@ -112,6 +112,7 @@ alias bw="cd ~/Documents/code/brandslisten/bl_bw"
 alias elb="cd ~/Documents/code/brandslisten/bl_elb"
 alias kar="cd ~/Documents/code/brandslisten/bl_kar"
 alias opstools="cd ~/Documents/code/brandslisten/opstools"
+alias backup="cd ~/Documents/code/brandslisten/backup"
 alias private="cd ~/Documents/code/brandslisten/private"
 alias code="cd ~/Documents/code"
 alias styleguide_bug='sed -i "" "/app-bundle/d" "$(bundle show bl_styleguide)/app/assets/stylesheets/bl_styleguide/main.scss"'
