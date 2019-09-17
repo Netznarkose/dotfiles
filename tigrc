@@ -72,6 +72,7 @@ bind generic ul stage-update-line
 bind generic us stage-split-chunk
 
 bind status C !git commit -v
+bind main A !git commit --amend
 
 bind generic K view-help
 bind generic <C-w><C-w> view-next
