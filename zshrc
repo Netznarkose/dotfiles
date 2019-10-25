@@ -1,8 +1,9 @@
 source /Users/max/dotfiles/secret_brandslisten_envs
 # zmodload zsh/zprof
-export NVM_DIR=~/.nvm
+alias nvm="echo 'NVM is currently muted, cause its slow as hell'"
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 export TERM=xterm-256color
-source $(brew --prefix nvm)/nvm.sh
 # Path to your oh-my-zsh installation.
 
 export ZSH=/Users/max/.oh-my-zsh
