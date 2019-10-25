@@ -32,17 +32,6 @@ function funk() {
   git checkout -b "$(date +%Y%m%d)_mm_$1"
 }
 
-function go() {
-  tmux has-session -t $1
-  if [ $? == 0 ]
-  then
-    tmux switch-client -t $1
-  else
-    cd ~/Documents/code/brandslisten/"bl_$1"
-  fi
-}
-
-
 # Vim-Mode Show-Status
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
