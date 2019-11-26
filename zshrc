@@ -1,8 +1,8 @@
 source /Users/max/dotfiles/secret_brandslisten_envs
 # zmodload zsh/zprof
-alias nvm="echo 'NVM is currently muted, cause its slow as hell'"
-# export NVM_DIR=~/.nvm
-# source $(brew --prefix nvm)/nvm.sh
+# alias nvm="echo 'NVM is currently muted, cause its slow as hell'"
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 export TERM=xterm-256color
 # Path to your oh-my-zsh installation.
 
@@ -161,7 +161,6 @@ plugins=(
 
 # User configuration
 
-export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:~/bin
 export EDITOR=vim
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -222,4 +221,7 @@ fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 
 # zprof
+source $HOME/.zshenv
+# needed by homebrew
 export PATH="/usr/local/sbin:$PATH"
+eval "$(rbenv init - zsh)"
