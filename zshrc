@@ -1,8 +1,8 @@
 source /Users/max/dotfiles/secret_brandslisten_envs
 # zmodload zsh/zprof
-# alias nvm="echo 'NVM is currently muted, cause its slow as hell'"
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+alias nvm="echo 'NVM is currently muted, cause its slow as hell'"
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 export TERM=xterm-256color
 # Path to your oh-my-zsh installation.
 
@@ -32,13 +32,6 @@ function funk() {
   git checkout -b "$(date +%Y%m%d)_mm_$1"
 }
 
-# Vim-Mode Show-Status
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-    RPS2=$RPS1
-    zle reset-prompt
-}
-
 zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
@@ -53,8 +46,6 @@ ZSH_THEME="refined"
 # export TERM=xterm-256color
 # [ -n "$TMUX" ] && export TERM=screen-256color
 
-# bindkey -v # Use vi-mode in Your Shell https://danielmiessler.com/blog/enhancements-to-shell-and-vim-productivity/
-# http://dougblack.io/words/zsh-vi-mode.html
 
 #--------------------Aliase---------------------------#
 
