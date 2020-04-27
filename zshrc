@@ -1,4 +1,3 @@
-source /Users/max/dotfiles/secret_brandslisten_envs
 # zmodload zsh/zprof
 alias nvm="echo 'NVM is currently muted, cause its slow as hell'"
 # export NVM_DIR=~/.nvm
@@ -68,39 +67,8 @@ alias dot="cd ~/dotfiles"
 alias dots="cd ~/dotfiles" 
 alias leo="cd ~/Documents/code/TerminalLeoMp3Parser ; ruby lib/terminal_leo_mp3_parser.rb"
 # brandslisten
-alias brand="cd ~/Documents/code/brandslisten"
-alias bl="cd ~/Documents/code/brandslisten/bl"
-alias core="cd ~/Documents/code/brandslisten/bl-core-logic"
-alias modular="cd ~/Documents/code/brandslisten/bl-modular-api"
-alias bbo="cd ~/Documents/code/brandslisten/bl_bbo"
-alias eon="cd ~/Documents/code/brandslisten/bl_eon"
-alias az="cd ~/Documents/code/brandslisten/bl_az"
-alias aok="cd ~/Documents/code/brandslisten/bl_aok"
-alias ac="cd ~/Documents/code/brandslisten/bl_ac"
-alias bywk="cd ~/Documents/code/brandslisten/bl_bywk"
-alias um="cd ~/Documents/code/brandslisten/bl_unity_media"
-alias wl="cd ~/Documents/code/brandslisten/white_label"
-alias swagger="cd ~/Documents/code/brandslisten/api-swagger"
-alias azch="cd ~/Documents/code/brandslisten/bl_azch"
-alias shn="cd ~/Documents/code/brandslisten/bl_shn"
-alias ed="cd ~/Documents/code/brandslisten/bl_ed"
-alias hw="cd ~/Documents/code/brandslisten/bl_hw"
-alias lol="cd ~/Documents/code/brandslisten/bl_lol"
-alias ds="cd ~/Documents/code/brandslisten/bl_ds"
-alias style="cd ~/Documents/code/brandslisten/bl_styleguide"
-alias qv="cd ~/Documents/code/brandslisten/bl_qv"
-alias bw="cd ~/Documents/code/brandslisten/bl_bw"
-alias elb="cd ~/Documents/code/brandslisten/bl_elb"
-alias kar="cd ~/Documents/code/brandslisten/bl_kar"
-alias opstools="cd ~/Documents/code/brandslisten/opstools"
-alias backup="cd ~/Documents/code/brandslisten/backup"
 alias private="cd ~/Documents/code/brandslisten/private"
 alias code="cd ~/Documents/code"
-alias styleguide_bug='sed -i "" "/app-bundle/d" "$(bundle show bl_styleguide)/app/assets/stylesheets/bl_styleguide/main.scss"'
-alias unseal_vault_sg="sh ~/Documents/code/brandslisten/bl_my_scripts/unseal_staging_vault.sh"
-alias unseal_vault_pn="sh ~/Documents/code/brandslisten/bl_my_scripts/unseal_production_vault.sh"
-alias status_vault_sg="sh ~/Documents/code/brandslisten/bl_my_scripts/status_staging_vault.sh"
-alias status_vault_pn="sh ~/Documents/code/brandslisten/bl_my_scripts/status_production_vault.sh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -193,21 +161,6 @@ bindkey '^[[[CB' forward-word       # shift enter
 # source $ZSH/iTerm2colors.sh
  
 # export PATH="/usr/local/sbin:$PATH"
-source ~/bl-openstack-env/openstackenv
-
-# SSH completion
-# taken from here https://serverfault.com/questions/170346/how-to-edit-command-completion-for-ssh-on-zsh
-h=()
-if [[ -r ~/.ssh/config ]]; then
-  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
-fi
-if [[ -r ~/.ssh/os-config ]]; then
-  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/os-config)"}:#Host *}#Host }:#*[*?]*})
-fi
-if [[ $#h -gt 0 ]]; then
-  zstyle ':completion:*:ssh:*' hosts $h
-  zstyle ':completion:*:slogin:*' hosts $h
-fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 
