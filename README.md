@@ -108,3 +108,15 @@ gtrans: https://translate.google.com/#view=home&op=translate&sl=en&tl=de&text=%s
 l: https://dict.leo.org/german-english/%s Leo
 f: https://forvo.com/search/%s Forvo
 ```
+
+## 20. Customize terminal
+
+Download color-templates
+
+- Builtin Solarized Dark
+- Builtin Solarized Light
+- Solarized Dark Patched
+
+Adjust colors if you need to 
+
+<img width="925" alt="Screen Shot 2020-04-27 at 8 15 10 PM" src="https://user-images.githubusercontent.com/10247813/80406154-e75f3c80-88c3-11ea-8558-084ea95cf13d.png">
