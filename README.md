@@ -113,7 +113,6 @@ f: https://forvo.com/search/%s Forvo
 
 Download color-templates
 
-- Builtin Solarized Dark
 - Builtin Solarized Light
 - Solarized Dark Patched
 
