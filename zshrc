@@ -168,4 +168,6 @@ bindkey '^[[[CB' forward-word       # shift enter
 source $HOME/.zshenv
 # needed by homebrew
 export PATH="/usr/local/sbin:$PATH"
-eval "$(rbenv init - zsh)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
