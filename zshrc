@@ -165,7 +165,6 @@ bindkey '^[[[CB' forward-word       # shift enter
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 
 # zprof
-source $HOME/.zshenv
 # needed by homebrew
 export PATH="/usr/local/sbin:$PATH"
 
