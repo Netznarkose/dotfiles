@@ -66,3 +66,7 @@ set diffopt+=vertical "opens Gdiff in vertical-split
 
 " vim-colorschemes
 colorscheme railscasts 
+
+" CTRLP
+" auto-reload to find recent files
+nnoremap <c-p> :CtrlPClearCache<bar>CtrlP<cr>
