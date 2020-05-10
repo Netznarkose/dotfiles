@@ -5,7 +5,6 @@ Plug 'tpope/vim-rails'
 
 """""  Layout/ Color 
 Plug 'flazz/vim-colorschemes' "color schema switcher
-Plug 'junegunn/seoul256.vim' "color schema
 Plug 'jpo/vim-railscasts-theme' "color schema
 Plug 'itchyny/lightline.vim' " StatusLine Plugin
 
