@@ -3,5 +3,5 @@ wiki/
 /vim/plugged/*
 tags/
 secret_brandslisten_envs
-
-
+vim/autoload/plug.vim
+vim/autoload/plug.vim.old
