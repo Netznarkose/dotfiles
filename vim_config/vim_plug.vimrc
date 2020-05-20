@@ -1,7 +1,6 @@
 call plug#begin()
-"""""  Ruby On Rails    
+"""""  Ruby
 Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
 
 """""  Layout/ Color 
 Plug 'flazz/vim-colorschemes' "color schema switcher
