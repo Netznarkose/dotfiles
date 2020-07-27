@@ -1,0 +1,10 @@
+{
+    "collapse_decks": true,
+    "collapse_filters": true,
+    "collapse_note_types": true,
+    "show_item_leech": true,
+    "show_item_marked": true,
+    "show_item_suspended": true,
+    "show_tree_flags": true,
+    "show_tree_today": true
+}
