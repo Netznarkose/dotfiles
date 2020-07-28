@@ -7,7 +7,8 @@ b)
    - Right Half: ⌥L   
    - Top Half: ⌥K   
    - Bottom Half: ⌥J   
-   - Fullscreen: ^F   
+   - Fullscreen: ^F    
+
 c) Exclude Iterm & Firefox from Rectangle   
 
 ## 2. Install Sync.com   
@@ -15,9 +16,6 @@ c) Exclude Iterm & Firefox from Rectangle
 ## 3. KeepassX  
 a) Install KeepassX  
 b) open sync/keepass_data/... 
-
-## 4. Iterm  
-a) Install Iterm  
 
 ## 5. Command Line Tools without Xcode  
 a) `xcode-select --install`  
@@ -90,13 +88,7 @@ c) Install add-on: Hierarchical Tags 1089921461
 
 ![screenshot_2](https://user-images.githubusercontent.com/10247813/53475916-76c75080-3a71-11e9-9df1-7ab00eed2a56.png)
 
-## 19. Install and Configure Vimium
-
-
-Excluded URLs and keys:  
-```
-https?://calendar.google.com/*
-```
+## 19. Install Firefox add and Configure Vimium
 
 Custom key mappings:  
 ```
@@ -107,21 +99,12 @@ map <C-h> previousTab
 map d removeTab
 ```
 
-Custom search engines:  
-```
-wik: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia
-wikt https://de.wiktionary.org/wiki/%s Wiktionary
-gtrans: https://translate.google.com/#view=home&op=translate&sl=en&tl=de&text=%s GoogleTranslate
-l: https://dict.leo.org/german-english/%s Leo
-f: https://forvo.com/search/%s Forvo
-```
+## 20. Install and customize Iterm
 
-## 20. Customize terminal
-
-Download color-templates
-
-- Builtin Solarized Light
-- Solarized Dark Patched
+a) Install Iterm  
+b) Download color-templates
+   - Builtin Solarized Light
+   - Solarized Dark Patched
 
 Adjust colors if you need to 
 
