@@ -49,10 +49,9 @@ vmap m <plug>Commentary
 "" Plugin Config
 
 " vim-buffergator
+" Open Buggergator with :Ls
 let g:buffergator_viewport_split_policy = "B"
 let g:buffergator_suppress_keymaps = 1
-" Open Buggergator with :Ls
-command Ls BuffergatorToggle 
 
 
 " nerdtree
