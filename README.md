@@ -1,13 +1,14 @@
 # Setup
 
 ## 1. Rectangle  
-a) Install Rectangle 
-b) Left Half: ⌥H  
-   Right Half: ⌥L  
-   Top Half: ⌥K  
-   Bottom Half: ⌥J  
-   Fullscreen: ^F  
-c) Exclude Iterm & Firefox from Rectangle 
+a) Install Rectangle  
+b) 
+   - Left Half: ⌥H   
+   - Right Half: ⌥L   
+   - Top Half: ⌥K   
+   - Bottom Half: ⌥J   
+   - Fullscreen: ^F   
+c) Exclude Iterm & Firefox from Rectangle   
 
 ## 2. Install Sync.com   
 
