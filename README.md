@@ -75,7 +75,7 @@ b) Download preset and enable it
 ## 15. Anki    
 a) Install Anki  
 b) sync Decks from AnkiWeb  
-c) Install add-on: Hierarchical Tags 1089921461 
+c) Install and configure these [add-ons](https://github.com/Netznarkose/dotfiles/tree/master/anki_addons_config)   
 
 ## 16. Disable the Dock’s ‘bounce to alert’ behavior  
 `defaults write com.apple.dock no-bouncing -bool TRUE`   
