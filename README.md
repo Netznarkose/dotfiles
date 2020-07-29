@@ -7,7 +7,7 @@ b)
    - Right Half: ⌥L   
    - Top Half: ⌥K   
    - Bottom Half: ⌥J   
-   - Fullscreen: ^F    
+   - Fullscreen: ⌥F    
 
 c) Exclude Iterm & Firefox from Rectangle   
 
