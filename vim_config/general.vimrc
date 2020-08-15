@@ -15,8 +15,12 @@ set splitbelow
 set ignorecase
 set mouse=a "http://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
 set lazyredraw "https://stackoverflow.com/questions/307148/vim-scrolling-slowly
-set timeoutlen=0 ttimeoutlen=0
+set timeoutlen=200 ttimeoutlen=0
 set noshowmode     "Because I use lightline to show modes https://github.com/itchyny/lightline.vim
+let mapleader = " "
+nnoremap <leader><space> :noh<cr>
+nnoremap <leader>t :!rake test TEST=%<cr>
+map <leader>r :execute "source " . $MYVIMRC<CR>
 
 " always open quickfix in full-width
 au FileType qf wincmd J
@@ -48,9 +52,9 @@ vmap m <plug>Commentary
 
 " vim-buffergator
 let g:buffergator_viewport_split_policy = "B"
-let g:buffergator_suppress_keymaps = 1
-" Open Buggergator with :Ls
-command Ls BuffergatorToggle 
+" let g:buffergator_suppress_keymaps = 1
+" " Open Buggergator with :Ls
+" command Ls BuffergatorToggle 
 
 
 " nerdtree
@@ -64,3 +68,6 @@ set diffopt+=vertical "opens Gdiff in vertical-split
 
 " vim-colorschemes
 colorscheme railscasts 
+
+" my-commands
+command Rubo !rubocop --auto-correct % <cr>

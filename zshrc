@@ -27,9 +27,7 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt HIST_VERIFY
 
-function funk() {
-  git checkout -b "$(date +%Y%m%d)_mm_$1"
-}
+export MYVIMRC="~/.vimrc"
 
 zle -N zle-line-init
 zle -N zle-keymap-select
