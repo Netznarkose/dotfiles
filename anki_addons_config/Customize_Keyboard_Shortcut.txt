@@ -38,7 +38,7 @@
     "m_toolbox study": "/",
     "m_toolbox switch profile": "Ctrl+Shift+P",
     "m_toolbox undo": "Ctrl+Z",
-    "main add": "Ctrl+N",
+    "main add": "Ctrl+A",
     "main browse": "B",
     "main debug": "Ctrl+:",
     "main deckbrowser": "D",
@@ -77,7 +77,7 @@
         "_concat": {},
         "_orConcat": {}
     },
-    "window_browser add note": "Ctrl+N",
+    "window_browser add note": "Ctrl+A",
     "window_browser add tag": "Ctrl+Shift+A",
     "window_browser change deck": "Ctrl+D",
     "window_browser change note type": "Ctrl+Shift+M",
