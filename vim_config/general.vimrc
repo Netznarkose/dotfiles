@@ -43,8 +43,8 @@ set clipboard=unnamed
 
 "" Mappings
 
-nmap <C-y> :NERDTreeToggle<CR>
-nmap <C-u> :NERDTreeFind<CR>
+nmap <leader>f :NERDTreeToggle<CR>
+nmap <leader>g :NERDTreeFind<CR>
 vmap m <plug>Commentary
 
 
