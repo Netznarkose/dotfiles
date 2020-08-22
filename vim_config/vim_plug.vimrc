@@ -4,8 +4,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 
 """""  Layout/ Color 
-Plug 'flazz/vim-colorschemes' "color schema switcher
-Plug 'jpo/vim-railscasts-theme' "color schema
 Plug 'itchyny/lightline.vim' " StatusLine Plugin
 
 """""  Editing        
@@ -14,7 +12,6 @@ Plug 'tpope/vim-sleuth' "This plugin adjusts 'shiftwidth' and 'expandtab'
 " Plug 'cohama/lexima.vim' "Auto close parentheses
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
-
 
 """""  Git Fugitive  
 Plug 'tpope/vim-fugitive'
