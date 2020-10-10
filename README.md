@@ -60,6 +60,7 @@ c) Make space as leader-key work uncheck _select previous input source_
 ## 12. Karabiner (Use Capslock as Controll and ESC-Key)
 a) install Karabiner Elements  
 b) Download preset and enable it  
+`Change caps_lock to control if pressed with other keys, to escape if pressed alone. `
 
 ![image](https://user-images.githubusercontent.com/10247813/67624937-c562ff80-f837-11e9-8b99-699acc19c904.png)
 
