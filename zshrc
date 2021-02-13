@@ -52,6 +52,9 @@ alias vi=nvim
 alias vim=nvim
 # Commands
 # alias tig="sh ~/dotfiles/tig.sh $1"
+alias ndr="cd ~/ndr" 
+alias ts="cd ~/ndr/ts-webapp2" 
+alias fe="cd ~/ndr/ts-webapp2/frontend-prototyping" 
 alias git='hub'
 alias be='bundle exec'
 alias bi='bundle install'
