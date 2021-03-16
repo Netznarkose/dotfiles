@@ -70,6 +70,7 @@ alias leo="cd ~/Documents/code/TerminalLeoMp3Parser ; ruby lib/terminal_leo_mp3_
 # brandslisten
 alias private="cd ~/Documents/code/brandslisten/private"
 alias code="cd ~/Documents/code"
+alias moneysync="cp ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
