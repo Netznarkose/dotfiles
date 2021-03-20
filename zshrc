@@ -31,14 +31,19 @@ export MYVIMRC="~/.vimrc"
 
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+#--------------------Export---------------------------#
 export KEYTIMEOUT=1
+# NPM Proxy-Settings for VPN
+export http_proxy=http://172.28.221.100:8080
+export https_proxy=http://172.28.221.100:8080
 
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="refined"
+ZSH_THEME="apple"
 # To Display the right colors/themes in tmux
 # export TERM=xterm-256color
 # [ -n "$TMUX" ] && export TERM=screen-256color
@@ -67,10 +72,11 @@ alias set_envs="source ~/dotfiles/set_envs.sh $1"
 alias dot="cd ~/dotfiles" 
 alias dots="cd ~/dotfiles" 
 alias leo="cd ~/Documents/code/TerminalLeoMp3Parser ; ruby lib/terminal_leo_mp3_parser.rb"
-# brandslisten
-alias private="cd ~/Documents/code/brandslisten/private"
-alias code="cd ~/Documents/code"
-alias moneysync="cp ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite"
+alias ts="cd ~/ndr/ts-webapp2" 
+alias us="cd ~/ndr/unified-webapps" 
+alias moneypull="cp ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite"
+alias moneypush="cp ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite"
+alias fe="cd ~/ndr/frontend-codennw"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
