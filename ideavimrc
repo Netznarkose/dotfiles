@@ -1,0 +1,11 @@
+set relativenumber
+set number
+set visualbell
+set noerrorbells
+# Fugitive-like ex-commands
+# enable Track action Ids to see the proper intellij command name
+:command Gblame action Annotate
+:command Gdiff action Git.CompareWithBranch
+:command Pry action EvaluateExpression
+:command FindFile action SelectIn
+:command Iwhere action GotoImplementation
