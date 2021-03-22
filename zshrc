@@ -53,14 +53,13 @@ ZSH_THEME="apple"
 
 # Alias
 # vi evokes the build in vim-editor which does not ships with +clipboard 
-alias vi=nvim
-alias vim=nvim
+alias vi=vim
+alias vim=vim
 # Commands
 # alias tig="sh ~/dotfiles/tig.sh $1"
 alias ndr="cd ~/ndr" 
 alias ts="cd ~/ndr/ts-webapp2" 
 alias fe="cd ~/ndr/ts-webapp2/frontend-prototyping" 
-alias git='hub'
 alias be='bundle exec'
 alias bi='bundle install'
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool NO; killall Finder'
@@ -76,6 +75,7 @@ alias ts="cd ~/ndr/ts-webapp2"
 alias us="cd ~/ndr/unified-webapps" 
 alias moneypull="cp ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite"
 alias moneypush="cp ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite"
+alias moneydiff=" ~/ diff ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite"
 alias fe="cd ~/ndr/frontend-codennw"
 
 # Uncomment the following line to use case-sensitive completion.
