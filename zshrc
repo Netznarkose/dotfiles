@@ -37,6 +37,9 @@ export KEYTIMEOUT=1
 # NPM Proxy-Settings for VPN
 export http_proxy=http://172.28.221.100:8080
 export https_proxy=http://172.28.221.100:8080
+export HTTP_PROXY=http://172.28.221.100:8080
+export HTTPS_PROXY=http://172.28.221.100:8080
+export NODE_EXTRA_CA_CERTS=/Users/max/Downloads/NDR_Proxy_CA_2017.cer
 
 
 # Set name of the theme to load.
