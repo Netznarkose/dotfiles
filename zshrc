@@ -41,7 +41,11 @@ export HTTP_PROXY=http://172.28.221.100:8080
 export HTTPS_PROXY=http://172.28.221.100:8080
 export NODE_EXTRA_CA_CERTS=/Users/max/ndr/ndr-certificates/NDR_Proxy_CA_2017.cer
 
-
+# unset http_proxy
+# unset https_proxy
+# unset HTTP_PROXY
+# unset HTTPS_PROXY
+# 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -78,7 +82,7 @@ alias ts="cd ~/ndr/ts-webapp2"
 alias us="cd ~/ndr/unified-webapps" 
 alias moneypull="cp ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite"
 alias moneypush="cp ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite"
-alias moneydiff=" ~/ diff ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite"
+alias moneydiff="diff ~/Sync/Documents/MoneyMoney/Database/MoneyMoney.sqlite ~/Library/Containers/com.moneymoney-app.retail/Data/Library/Application\ Support/MoneyMoney/Database/MoneyMoney.sqlite"
 alias fe="cd ~/ndr/frontend-codennw"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -171,13 +175,8 @@ bindkey '^[[[CB' forward-word       # shift enter
 # check ~/.oh_my_zsh/iTerm2colors.sh
 # source $ZSH/iTerm2colors.sh
  
-# export PATH="/usr/local/sbin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
 # zprof
 # needed by homebrew
 export PATH="/usr/local/sbin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
